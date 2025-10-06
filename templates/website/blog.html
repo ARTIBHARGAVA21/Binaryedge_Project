@@ -1,0 +1,125 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block blogactive %}
+active
+{% endblock blogactive %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<div class="container-fluid px-0 section4">
+    <div>
+        <h1>BinaryEdge - Science and Technology</h1>
+    </div>
+</div>
+
+<!-- Blog Cards Section -->
+<div class="container text-center">
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+
+        <!-- Card 1 -->
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                style="background-image: url('{% static 'images/cybersecurity.jpg' %}'); background-size: cover;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Attack Surface Mgmt</h2>
+                    <ul class="d-flex list-unstyled mt-auto text-center">
+                        <li class="d-flex align-items-center me-3"><small>Global</small></li>
+                        <li class="d-flex align-items-center"><small>3d</small></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                style="background-image: url('{% static 'images/image.jpg' %}'); background-size: cover;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Asset Discovery</h2>
+                    <ul class="d-flex list-unstyled mt-auto text-center">
+                        <li class="d-flex align-items-center me-3"><small>Pakistan</small></li>
+                        <li class="d-flex align-items-center"><small>4d</small></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                style="background-image: url('{% static 'images/image1.jpg' %}'); background-size: cover;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Penetration Testing</h2>
+                    <ul class="d-flex list-unstyled mt-auto text-center">
+                        <li class="d-flex align-items-center me-3"><small>California</small></li>
+                        <li class="d-flex align-items-center"><small>5d</small></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                style="background-image: url('{% static 'images/image2.jpg' %}'); background-size: cover;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Dark Web Monitoring</h2>
+                    <ul class="d-flex list-unstyled mt-auto text-center">
+                        <li class="d-flex align-items-center me-3"><small>Darknet</small></li>
+                        <li class="d-flex align-items-center"><small>1w</small></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                style="background-image: url('{% static 'images/image3.jpg' %}'); background-size: cover;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Real-Time Threat Feeds</h2>
+                    <ul class="d-flex list-unstyled mt-auto text-center">
+                        <li class="d-flex align-items-center me-3"><small>Realtime</small></li>
+                        <li class="d-flex align-items-center"><small>12h</small></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                style="background-image: url('{% static 'images/technology.jpg' %}'); background-size: cover;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">IoT Exposure Analysis</h2>
+                    <ul class="d-flex list-unstyled mt-auto text-center">
+                        <li class="d-flex align-items-center me-3"><small>IoT</small></li>
+                        <li class="d-flex align-items-center"><small>6h</small></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Background Hero Image Style -->
+<style>
+    .section4 {
+        width: 100%;
+        height: 95vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url("{% static 'images/technology1.jpg' %}");
+        background-position: center;
+        background-size: cover;
+        color: white;
+    }
+</style>
+
+{% endblock content %}

@@ -1,0 +1,125 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block pricingactive %}
+active
+{% endblock pricingactive %}
+
+{% block content %}
+<div class="container py-5">
+    <h1 class="text-center mb-5"><b>Pricing Plans</b></h1>
+
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped text-center" id="pricing-table">
+            <caption class="text-muted text-start">Compare features across different subscription plans.</caption>
+
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">Features</th>
+                    <th scope="col">Free<br><span class="text-muted">$0/month</span></th>
+                    <th scope="col">Starter<br><span class="text-muted">$10/month</span></th>
+                    <th scope="col">Business<br><span class="text-muted">$500/month</span></th>
+                    <th scope="col">Enterprise<br><span class="text-muted">Custom</span></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th scope="row">Queries (per month)</th>
+                    <td>250</td>
+                    <td>5,000</td>
+                    <td>55,000</td>
+                    <td>Unlimited</td>
+                </tr>
+                <tr>
+                    <th scope="row">Limit Pages per Query</th>
+                    <td>1,000</td>
+                    <td>1,000</td>
+                    <td>1,000</td>
+                    <td>Unlimited</td>
+                </tr>
+                <tr>
+                    <th scope="row">Web & API Access</th>
+                    <td colspan="4" class="text-success"><i class="fas fa-check"></i></td>
+                </tr>
+                <tr>
+                    <th scope="row">Host Data (IPs, Ports, Services)</th>
+                    <td colspan="4" class="text-success"><i class="fas fa-check"></i></td>
+                </tr>
+                <tr>
+                    <th scope="row">Historical Data (6 months)</th>
+                    <td colspan="4" class="text-success"><i class="fas fa-check"></i></td>
+                </tr>
+                <tr>
+                    <th scope="row">RDP Screenshots</th>
+                    <td colspan="4" class="text-success"><i class="fas fa-check"></i></td>
+                </tr>
+                <tr>
+                    <th scope="row">Honeypot Data</th>
+                    <td colspan="4" class="text-success"><i class="fas fa-check"></i></td>
+                </tr>
+                <tr>
+                    <th scope="row">Torrents Monitored</th>
+                    <td colspan="4" class="text-success"><i class="fas fa-check"></i></td>
+                </tr>
+                <tr>
+                    <th scope="row">Subdomain Enumeration</th>
+                    <td colspan="4" class="text-success"><i class="fas fa-check"></i></td>
+                </tr>
+                <tr>
+                    <th scope="row">Full Domain Search</th>
+                    <td colspan="4" class="text-success"><i class="fas fa-check"></i></td>
+                </tr>
+                <tr>
+                    <th scope="row">Dataleaks - Email Search</th>
+                    <td colspan="4" class="text-success"><i class="fas fa-check"></i></td>
+                </tr>
+                <tr>
+                    <th scope="row">Dataleaks - Domain Search</th>
+                    <td colspan="4" class="text-success"><i class="fas fa-check"></i></td>
+                </tr>
+                <tr>
+                    <th scope="row">On-Demand Scans</th>
+                    <td colspan="4" class="text-success"><i class="fas fa-check"></i></td>
+                </tr>
+                <tr>
+                    <th scope="row">Entity Mapping</th>
+                    <td colspan="4" class="text-success"><i class="fas fa-check"></i></td>
+                </tr>
+                <tr>
+                    <th scope="row">Data Enrichment</th>
+                    <td colspan="4" class="text-success"><i class="fas fa-check"></i></td>
+                </tr>
+                <tr>
+                    <th scope="row">User License(s)</th>
+                    <td>1 User</td>
+                    <td>1 User</td>
+                    <td>1 Business</td>
+                    <td>Unlimited Users</td>
+                </tr>
+                <tr>
+                    <th scope="row">Priority Support</th>
+                    <td><span class="text-muted">–</span></td>
+                    <td><span class="text-muted">–</span></td>
+                    <td><span class="text-muted">–</span></td>
+                    <td class="text-success"><i class="fas fa-check"></i></td>
+                </tr>
+                <tr>
+                    <th scope="row">Support</th>
+                    <td><a href="https://slack.binaryedge.io" target="_blank">Community Slack</a></td>
+                    <td>Email + <a href="https://slack.binaryedge.io" target="_blank">Slack</a></td>
+                    <td>Email + <a href="https://slack.binaryedge.io" target="_blank">Slack</a></td>
+                    <td>Email + Private Slack</td>
+                </tr>
+                <tr class="bg-light">
+                    <td></td>
+                    <td><a href="https://app.binaryedge.io/sign-up" class="btn btn-outline-primary btn-sm">Sign Up</a></td>
+                    <td><a href="https://app.binaryedge.io/sign-up" class="btn btn-outline-primary btn-sm">Sign Up</a></td>
+                    <td><a href="https://app.binaryedge.io/sign-up" class="btn btn-outline-primary btn-sm">Sign Up</a></td>
+                    <td><a href="mailto:sales@binaryedge.io?subject=BinaryEdge Product Enquiry - Custom Package" class="btn btn-outline-dark btn-sm">Contact Us</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock content %}
